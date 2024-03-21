@@ -269,7 +269,7 @@ message UpdateNetInterfaceRequest {
     NetInterface net_interface = 1 [(google.api.field_behavior) = REQUIRED];
     // list of fields to update
     google.protobuf.FieldMask update_mask = 2 [(google.api.field_behavior) = OPTIONAL];
-    // If set to true, and the object is found, a new object will be created. 
+    // If set to true, and the object is not found, a new object will be created. 
     // In this situation, 'update_mask' is ignored. 
     bool allow_missing = 3 [(google.api.field_behavior) = OPTIONAL];
 }
